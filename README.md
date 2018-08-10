@@ -251,7 +251,7 @@ import ColorPlugin from 'between.js/build/dom-color.between.js';
 
 Between._plugins.color = ColorPlugin;
 
-new Between('red', 'rgb(255,40,30)').time(4000)
+new Between('green', 'rgb(255, 0, 0)').time(4000)
   .on('update', (value) => {
       console.log(value);
   });
