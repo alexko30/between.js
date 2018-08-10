@@ -277,9 +277,9 @@ Between._plugins.color = ColorPlugin;
 
 // choose easing mode frome easing-functions
 
-new Between('red', 'rgb(255,40,30)').time(4000)
-  .loop('repeat', 3)
-  .easing(Between.Easing.Linear)
+new Between('rgb(15, 160, 90)', 'rgba(155, 60, 90,.9)')
+  .time(5000)
+  .easing(Between.Easing.Cubic.InOut)
   .on('update', (value) => {
       console.log(value);
   });
